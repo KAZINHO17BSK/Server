@@ -34,13 +34,13 @@ app.post('/doar', (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'iagenn94@gmail.com', // Altere para o seu endereço de e-mail
-        pass: '13052004ca' // Altere para a sua senha
+        user: 'xxxxxxxx@gmail.com',
+        pass: 'xxxxxxxxxx'
       }
     });
 
     let mailOptions = {
-      from: 'iagenn94@gmail.com',
+      from: 'xxxxxxxx@gmail.com',
       to: email,
       subject: 'Nova Doação de Água',
       text: `Recebemos uma nova doação de ${quantidade_litros} litros de ${nome}.`
